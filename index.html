@@ -2,138 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BENGLOHOD GLOBAL SERVICES LIMITED</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENGLOHOD GLOBAL SERVICES LIMITED</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">BENGLOHOD</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="index.html#cac">CAC</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<!-- NAVIGATION -->
-<nav class="nav">
-    <div class="logo">BENGLOHOD</div>
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#tabs">Explore</a></li>
-    </ul>
-</nav>
-
-<!-- HERO SECTION -->
-<section id="hero" class="hero">
-    <div class="hero-text">
-        <h1>BENGLOHOD GLOBAL SERVICES LIMITED</h1>
-        <p>Professional Digital & Technology Solutions for Businesses</p>
-    </div>
-</section>
-
-<!-- TABS SECTION -->
-<section id="tabs" class="section">
-    <h2>Explore Our Company</h2>
-    
-    <div class="tabs-menu">
-        <button class="tab-btn active" data-tab="about">About</button>
-        <button class="tab-btn" data-tab="services">Services</button>
-        <button class="tab-btn" data-tab="certificates">Certificates</button>
-        <button class="tab-btn" data-tab="team">Team</button>
-        <button class="tab-btn" data-tab="contact">Contact</button>
-    </div>
-
-    <div class="tabs-content">
-        <!-- About -->
-        <div class="tab-content active" id="about">
-            <p>
-                BENGLOHOD GLOBAL SERVICES LIMITED specializes in modern digital solutions,
-                web development, and technology services. Led by Edward Daniel Obinna, the
-                company focuses on quality, consistency, and innovation in every project.
-            </p>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Welcome to <span>BENGLOHOD GLOBAL SERVICES LIMITED</span></h1>
+                <p>Innovating digital solutions, automation, and AI tools while supporting diverse industries including transport and education.</p>
+                <a href="#featured-projects" class="btn">View Our Projects</a>
+                <div class="scroll-down">&#x2193; Scroll</div>
+            </div>
         </div>
-        
-        <!-- Services -->
-        <div class="tab-content" id="services">
-            <div class="services-grid">
-                <div class="card">
-                    <h3>Web Development</h3>
-                    <p>Creating scalable, responsive websites with modern standards.</p>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="featured-projects" class="featured-projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="achievement-cards">
+                <div class="achievement-card">
+                    <h4>Bulk Email Sender</h4>
+                    <p>A powerful automation tool designed to send mass emails efficiently for marketing and business communications.</p>
                 </div>
-                <div class="card">
-                    <h3>Technical Projects</h3>
-                    <p>Assisting in digital system setups and project implementation.</p>
+                <div class="achievement-card">
+                    <h4>Bulk Email Extractor</h4>
+                    <p>Extract contacts from multiple sources to streamline lead generation and outreach campaigns.</p>
                 </div>
-                <div class="card">
-                    <h3>Digital Support</h3>
-                    <p>Providing technical support and maintenance for ongoing projects.</p>
+                <div class="achievement-card">
+                    <h4>SYLA – AI Assistant</h4>
+                    <p>Command Prompt AI capable of opening apps, automating tasks, and enhancing productivity on PC.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Web & Software Solutions</h4>
+                    <p>Custom websites and digital automation services tailored to business needs, combining software expertise with modern design.Custom websites, Android apps, and PC applications tailored to business needs, combining software expertise with modern design and digital automation.</p>
                 </div>
             </div>
         </div>
-        
-        <!-- Certificates -->
-        <div class="tab-content" id="certificates">
-            <p>Official CAC certificate of BENGLOHOD GLOBAL SERVICES LIMITED:</p>
-            <a href="assets/documents/certificate.pdf" target="_blank" class="download-btn">
-                View / Download CAC Certificate (PDF)
-            </a>
-        </div>
-        
-        <!-- Team -->
-        <div class="tab-content" id="team">
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="assets/images/principal.jpg" alt="Edward Daniel Obinna">
+    </section>
+
+    <!-- TEAM PREVIEW -->
+    <section class="team-preview">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-profiles">
+                <div class="profile-card">
+                    <img src="images/ceo.jpg" alt="Edward Daniel Obinna">
                     <h3>Edward Daniel Obinna</h3>
-                    <p>Principal / CEO</p>
+                    <p>Founder & CEO</p>
                 </div>
-                <div class="team-member">
-                    <img src="assets/images/profile.jpg" alt="Honour Obinna">
-                    <h3>Honour Obinna</h3>
-                    <p>Technical Support</p>
+                <div class="profile-card">
+                    <img src="images/profile.jpg" alt="Obinna Honour">
+                    <h3>Obinna Honour</h3>
+                    <p>Software Engineer – Digital Solutions</p>
                 </div>
             </div>
         </div>
-        
-        <!-- Contact -->
-        <div class="tab-content" id="contact">
-            <p>
-                For professional inquiries or collaboration opportunities, please reach out via:
-                <br><br>
-                <strong>obinnaugohonour@gmail.com</strong>
-            </p>
+    </section>
+
+    <!-- CAC REGISTRATION -->
+    <section id="cac" class="cac-preview">
+        <div class="container">
+            <h2>CAC Registration</h2>
+            <p>Company Registration Number:</p>
+            <div class="cac-number">8354289</div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 BENGLOHOD GLOBAL SERVICES LIMITED. All rights reserved.
-</footer>
-
-<!-- JAVASCRIPT FOR TABS AND HAMBURGER -->
-<script>
-const tabs = document.querySelectorAll(".tab-btn");
-const contents = document.querySelectorAll(".tab-content");
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-// Tabs toggle
-tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-        tabs.forEach(t => t.classList.remove("active"));
-        contents.forEach(c => c.classList.remove("active"));
-
-        tab.classList.add("active");
-        document.getElementById(tab.dataset.tab).classList.add("active");
-    });
-});
-
-// Hamburger toggle
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('toggle');
-});
-</script>
-
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BENGLOHOD GLOBAL SERVICES LIMITED. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
